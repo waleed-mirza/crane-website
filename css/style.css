@@ -35,11 +35,11 @@
 }
 
 .logo {
-  height: 20vh;
+  height: 10vh;
   overflow: hidden;
 }
 .image-container img {
-  max-width: 120px !important;
+  max-width: 60px !important;
 }
 .search-logo {
   background-color: #fb9300;
