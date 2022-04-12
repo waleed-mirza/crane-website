@@ -1,0 +1,75 @@
+.web-backcolor {
+  background-color: #fb9300 !important;
+}
+.web-fontcolor {
+  color: #fb9300 !important;
+}
+
+.nav-header {
+  background-color: #fb9300;
+}
+.nav-header > div,
+.sticky-navbar > div {
+  font-weight: 500;
+}
+.has-menu {
+  cursor: pointer;
+}
+.has-menu::after {
+  font-weight: bolder;
+  content: ">";
+  left: 10px;
+  position: relative;
+  pointer-events: none;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  transform: rotate(90deg);
+  transform-origin: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-out 0s, -webkit-transform 0.2s ease-out 0s;
+}
+.has-menu:hover::after {
+  transform: rotate(270deg);
+}
+
+.logo {
+  height: 20vh;
+  overflow: hidden;
+}
+.image-container img {
+  max-width: 120px !important;
+}
+.search-logo {
+  background-color: #fb9300;
+}
+.search-bar input {
+  border-radius: 100px 0 0 100px;
+  border: 1px solid gray;
+}
+.search-bar > div {
+  border-radius: 0 100px 100px 0;
+  border: 1px solid gray;
+}
+
+.sticky-navbar img {
+  max-width: 50px !important;
+}
+.sticky-navbar li {
+  list-style-type: none;
+}
+.sticky-navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-btn-border {
+  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.header-carousel {
+  height: 90vh;
+}
+.carousel-image-container {
+  height: 90vh;
+}
