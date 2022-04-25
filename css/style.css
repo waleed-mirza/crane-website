@@ -1,6 +1,3 @@
-.web-backcolor {
-  background-color: #fb9300 !important;
-}
 .web-fontcolor {
   color: #fb9300 !important;
 }
@@ -64,12 +61,77 @@
   color: black;
 }
 
-.contact-btn-border {
-  clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
-}
 .header-carousel {
   height: 90vh;
 }
 .carousel-image-container {
   height: 90vh;
+}
+
+@media screen and (min-width: 1199.98px) {
+  .nav-header,
+  .sticky-navbar {
+    font-size: 1.3rem !important;
+  }
+  .has-menu::after {
+    font-size: 22px !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .nav-header {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+  .sticky-navbar {
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+  }
+  .has-menu::after {
+    font-size: 14px !important;
+  }
+  .web-backcolor {
+    background-color: #fb9300 !important;
+  }
+  .contact-btn-border {
+    clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+  .sticky-navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .sticky-navbar li,
+  .contact-btn-border > div,
+  .top-header > div {
+    margin: 10px 0px !important;
+  }
+  .search-bar {
+    font-size: 1rem !important;
+  }
+  .top-header {
+    top: 110px !important;
+    left: 0px;
+    z-index: 99;
+    width: 100%;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 451.98px) {
+  .image-container img {
+    max-width: 50px !important;
+  }
+}
+
+.show {
+  max-height: fit-content !important;
 }
