@@ -1,3 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: #3d3d3d !important;
+  line-height: 1.8 !important;
+}
+a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+.button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-color: #fb9300;
+  color: #000;
+  border: none;
+}
+.button:hover {
+  background-color: #000;
+  color: #fb9300;
+  transition: transform 0.2s ease-out;
+  transform: scale(1.1);
+}
+/* custom styling */
+
 .web-fontcolor {
   color: #fb9300 !important;
 }
@@ -50,6 +95,12 @@
   border: 1px solid gray;
 }
 
+.sticky-navbar,
+.logo,
+.nav-header {
+  z-index: 9 !important;
+}
+
 .sticky-navbar img {
   max-width: 50px !important;
 }
@@ -62,7 +113,7 @@
 }
 
 .header-carousel {
-  /* height: 50vh; */
+  z-index: 1;
 }
 
 .header-carousel img {
@@ -70,9 +121,11 @@
   width: 100% !important;
 }
 .performance-section h2 {
-  color: #676f77;
+  /* color: #676f77; */
+  /* color: #3d3d3d; */
 }
-.performance-section h2::after {
+.performance-section h2::after,
+.apply-section h2::after {
   content: "";
   display: block;
   width: 3.75rem;
@@ -85,12 +138,25 @@
 }
 .performance-section p {
   margin-bottom: 1.5rem;
-  line-height: 1.5rem;
   text-rendering: optimizeLegibility;
   font-size: 16px;
   text-align: center;
 }
 
+/* world of wk section*/
+.worldwk-section a:hover {
+  transition: transform 0.2s ease-in-out;
+
+  transform: translateY(-3px);
+}
+.flex-gap-x > * {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.flex-gap-y > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 @media screen and (min-width: 1199.98px) {
   .nav-header,
   .sticky-navbar {
@@ -105,7 +171,6 @@
 @media screen and (min-width: 992px) {
   .nav-header {
     font-size: 1rem !important;
-    line-height: 1.8 !important;
   }
   .sticky-navbar {
     font-size: 0.875rem !important;
@@ -156,6 +221,7 @@
     right: 10px;
   }
 }
+/* mobile devices */
 @media screen and (max-width: 451.98px) {
   .image-container img {
     max-width: 50px !important;
